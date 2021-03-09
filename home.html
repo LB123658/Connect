@@ -2,33 +2,76 @@
 <html>
 <head>
 <title>Connәct</title>
-<link rel='icon' href='https://drive.google.com/thumbnail?id=1e_w7WjrbhsT5v7e-VJCaOLsPO3ZoRzYB' type='image/svg'/ >  
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='icon' href='https://drive.google.com/thumbnail?id=1e_w7WjrbhsT5v7e-VJCaOLsPO3ZoRzYB' type='image/png'/ >  
 <style>
-#form {
+#title {
 position: absolute;
-top: 0px;
-width: 100%;
-left: 0px;
-height: 400px;
+top: 50px;
+left: 25%;
+width: 50%;
 }
-#send {
-position: absolute;
-top: 400px;
-width: 100%;
+#footer {
+position: fixed;
+bottom: 0px;
 left: 0px;
-height: 600px;
+width: 100%;
+height: 60px;
+background: #38761D;
+}
+.importantText {
+color: white;
+font-family: arial;
+font-size: 20px;
+}
+.footerB {
+height: 40px;
+width: 100px;
+border-radius: 20px;
+border: 2px solid white;
+background: transparent;
+color: white;
+cursor: pointer;
+font-size: 14px;
+}
+.footerB:hover {
+background: white;
+color: #38761D;
+animation-name: footer;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+}
+@keyframes footer {
+ 
+  0% {background-color: transparent;}
+  100%   {background-color: white}
+
+}
+#footerA {
+position: absolute;
+top: 12px;
+right: 40px;
+}
+#aad {
+position: absolute;
+left: 20px;
+}
+#footerO {
+position: absolute;
+top: 12px;
+right: 160px;
 }
 </style>
 </head>
-<body onload="setInterval(reloadPage(), 3000)">
-<embed src="https://docs.google.com/spreadsheets/d/1zwoba5OoS4OpdEE0j59ONKMf1RlnPLJcEM7jdrfd35g/edit#gid=1900458964" id="form">
-<embed src="https://docs.google.com/forms/d/e/1FAIpQLSd_imeOW5g7vAQTZcjT92yqrEzLKxLxZQypqtJ9jCQzSBBX5w/viewform" id="send">
-<script>
-function reloadPage() {
-location.reload();
-}
-</script>
+<body>
+<img src="https://lb123658.github.io/Connect/logo.png" id="title" />
+<div id="footer">
+<p class="importantText" id="aad">Connecting friends around the world.</p>
+<a href="https://lb123658.github.io/Connect/trending.html">
+<button class="footerB" id="footerA">See trending</button></a>
+<a href="https://lb123658.github.io/Connect/">
+<button class="footerB" id="footerO">Sign in</button></a>
+
+</div>
 </body>
 </html>
-
