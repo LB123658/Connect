@@ -19,6 +19,7 @@ left: 0px;
 border-radius: 14px;
 border: 2px solid #38761D;
 height: 200px;
+visibility: visible;
 }
 #verified {
 color: #38761D;
@@ -99,16 +100,29 @@ background: white;
 color: white;
 z-index: 2;
 }
+#mas {
+position: absolute;
+right: 10px;
+bottom: 10px;
+border: none;
+background: transparent;
+cursor: pointer;
+color: grey;
+}
+#mas:hover {
+color: #38761D;
+}
+
 </style>
 </head>
 <body>
 <div id="post">
-<a href="https://lb123658.github.io/Connect/users/contemporary_flapjack">
+<a href="https://lb123658.github.io/Connect/users/contemporary_flapjack" target="_blank">
 <p id="userLink">Contemporary Flapjack<span id="verified" class="material-icons" title="Verified account">
 verified
 </span></p></a>
 
-<p id="postText">I am a contemporary flapjack and I like pancakes. This is awesome!!!!!! I am posting this at three in the morning after I ate some pancakes with a side of flapjacks. <br><br><span id="hashtag">#Fots</span></p>
+<p id="postText">I am a contemporary flapjack and I like pancakes. This is awesome!!!!!! I am posting this at three in the morning after I ate some pancakes with a side of flapjacks. <span id="hashtag">#Fots</span></p>
 <button id="like" title="Like this post"><span class="material-icons">
 thumb_up
 </span></button>
@@ -120,9 +134,16 @@ thumb_down
 <button id="share" title="Share" onclick="share()"><span class="material-icons">
 share
 </span></button>
+
+<button id="mas" title="Unavailable"><span class="material-icons">
+more_vert
+</span></button>
+
 <input type="text" id="url" value="https://lb123658.github.io/Connect/contemporary_flapjack1.html">
 <input type="text" id="urlTop">
 </div>
+
+
 
 <script>
 function share() {
@@ -132,6 +153,7 @@ function share() {
   document.execCommand("copy");
   alert("Share or embed this link: " + copyText.value);
 }  
+
 </script>
 </body>
 </html>
