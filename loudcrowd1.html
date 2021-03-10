@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>LoudCrowd post(1)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='icon' href='https://drive.google.com/thumbnail?id=1e_w7WjrbhsT5v7e-VJCaOLsPO3ZoRzYB' type='image/png'/ >  
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<style>
+body {
+cursor: default;
+font-family: arial;
+overflow: hidden;      
+}
+#post {
+width: 99%;
+position: absolute;
+top: 0px;
+left: 0px;
+border-radius: 14px;
+border: 2px solid #38761D;
+height: 200px;
+visibility: visible;
+}
+#verified {
+color: #38761D;
+position: absolute;
+top: -4px;
+left: 130px;
+
+}
+#userLink {
+position: absolute;
+top: 10px;
+left: 10px;
+cursor: pointer;
+color: black;
+}
+#userLink:hover {
+color: #38761D;
+}
+#postText {
+position: absolute;
+top: 50px;
+left: 10px;
+}
+#hashtag:hover {
+color: #38761D;
+cursor: pointer;
+}
+#like {
+position: absolute;
+left: 10px;
+bottom: 10px;
+border: none;
+background: transparent;
+cursor: pointer;
+color: grey;
+}
+#like:hover {
+color: #38761D;
+}
+#dislike {
+position: absolute;
+left: 50px;
+bottom: 10px;
+border: none;
+background: transparent;
+cursor: pointer;
+color: grey;
+}
+#dislike:hover {
+color: #38761D;
+}
+#share {
+position: absolute;
+left: 90px;
+bottom: 10px;
+border: none;
+background: transparent;
+cursor: pointer;
+color: grey;
+}
+#share:hover {
+color: #38761D;
+}
+#url {
+position: absolute;
+left: 150px;
+bottom: 10px;
+border: none;
+background: transparent;
+color: white;
+}
+#urlTop {
+position: absolute;
+left: 150px;
+bottom: 10px;
+border: 3px solid white;
+background: white;
+color: white;
+z-index: 2;
+}
+#mas {
+position: absolute;
+right: 10px;
+bottom: 10px;
+border: none;
+background: transparent;
+cursor: pointer;
+color: grey;
+}
+#mas:hover {
+color: #38761D;
+}
+#shortUrl {
+color: black;
+text-decoration: none;
+}
+#shortUrl:hover {
+color: #38761D;
+text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<div id="post">
+<a href="https://lb123658.github.io/Connect/users/loudcrowd" target="_blank">
+<p id="userLink">LoudCrowd Music<span id="verified" class="material-icons" title="Verified music account">
+music_note
+</span></p></a>
+
+<p id="postText">Releasing new music on LoudCrowd. <a href="https://sites.google.com/view/music238" target="_blank" id="shortUrl">Check it out now!</a> Including music by Big MIckkeys, Zilched, and Fots. Two music videos available! <span id="hashtag">#LotsOfFreeMusic</span></p>
+<button id="like" title="Like this post"><span class="material-icons">
+thumb_up
+</span></button>
+
+<button id="dislike" title="Dislike this post"><span class="material-icons">
+thumb_down
+</span></button>
+
+<button id="share" title="Share" onclick="share()"><span class="material-icons">
+share
+</span></button>
+
+<button id="mas" title="Unavailable"><span class="material-icons">
+more_vert
+</span></button>
+
+<input type="text" id="url" value="https://lb123658.github.io/Connect/loudcrowd1.html">
+<input type="text" id="urlTop">
+</div>
+
+
+
+<script>
+function share() {
+  var copyText = document.getElementById("url");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Share or embed this link: " + copyText.value);
+}  
+
+</script>
+</body>
+</html>
