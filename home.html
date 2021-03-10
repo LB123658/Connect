@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,6 +18,7 @@ left: 0px;
 width: 100%;
 height: 60px;
 background: #38761D;
+z-index: 3;
 }
 .importantText {
 color: white;
@@ -72,6 +72,26 @@ z-index: 2;
 height: 205px;
 overflow: hidden;
 }
+#postB {
+position: absolute;
+top: 460px;
+left: 25%;
+width: 50%;
+z-index: 2;
+height: 605px;
+overflow: hidden;
+}
+
+#bottomflap {
+position: absolute;
+top: 960px;
+left: 25%;
+width: 50%;
+z-index: -1;
+height: 205px;
+overflow: hidden;
+color: transparent;
+}
 </style>
 </head>
 <body>
@@ -79,6 +99,10 @@ overflow: hidden;
 <img src="https://lb123658.github.io/Connect/logo.png" id="title" />
 
 <embed id="postA" src="https://lb123658.github.io/Connect/contemporary_flapjack1">
+
+<embed id="postB" src="https://lb123658.github.io/Connect/contemporary_flapjack2">
+
+<p id="bottomflap">More posts comming soon...<br><br><br><br><br><br><br><br><br>Loading...</p>
 </div>
 
 <div id="footer">
